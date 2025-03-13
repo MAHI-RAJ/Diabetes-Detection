@@ -40,4 +40,21 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+    const clearButton = document.createElement("button");
+    clearButton.textContent = "Clear Saved Data";
+    clearButton.style.marginTop = "10px";
+    clearButton.style.padding = "10px";
+    clearButton.style.background = "red";
+    clearButton.style.color = "white";
+    clearButton.style.border = "none";
+    clearButton.style.borderRadius = "5px";
+    clearButton.style.cursor = "pointer";
+
+    clearButton.addEventListener("click", function () {
+        localStorage.removeItem("formData");
+        form.reset();
+        alert("Saved data cleared! 🔄");
+    });
+
+    form.appendChild(clearButton);
 });
