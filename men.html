@@ -9,8 +9,12 @@
 <body>
 
     <div class="form-container">
-        <h2>Men's Disease Prediction</h2>
+        <h2>Men's Diabetes Prediction</h2>
         <form action="/predict" method="post">
+            <label>Insulin Level:
+                <span class="tooltip" title="Low insulin level can leads to high blood sugar.">❓</span>
+            </label>
+            <input type="number" name="IL" required>
             <label>Glucose Level: 
                 <span class="tooltip" title="Blood sugar level. High values may indicate diabetes.">❓</span>
             </label>
@@ -42,6 +46,7 @@
             <input type="number" name="age" required>
 
             <button type="submit">Predict</button>
+            <button type="reset">Reset</button>
         </form>
     </div>
 
