@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Health Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Women's Disease Prediction</h2>
+        <form action="/predict" method="post">
+            <label>Pregnancies: 
+                <span class="tooltip" title="Number of times you have been pregnant.">❓</span>
+            </label>
+            <input type="number" name="pregnancies" required>
+
+            <label>Glucose Level: 
+                <span class="tooltip" title="Blood sugar level. High values may indicate diabetes.">❓</span>
+            </label>
+            <input type="number" name="glucose" required>
+
+            <label>Blood Pressure: 
+                <span class="tooltip" title="Pressure of blood against artery walls.">❓</span>
+            </label>
+            <input type="number" name="bp" required>
+
+            <label>Skin Thickness: 
+                <span class="tooltip" title="Measures subcutaneous fat (used to estimate body fat percentage).">❓</span>
+            </label>
+            <input type="number" name="skin_thickness" required>
+
+            <label>Insulin Level: 
+                <span class="tooltip" title="Amount of insulin in the blood (helps in diabetes diagnosis).">❓</span>
+            </label>
+            <input type="number" name="insulin" required>
+
+            <label>BMI (Body Mass Index): 
+                <span class="tooltip" title="Measures body fat based on height & weight.">❓</span>
+            </label>
+            <input type="number" name="bmi" step="0.01" required>
+
+            <label>Diabetes Pedigree Function: 
+                <span class="tooltip" title="A score indicating genetic risk based on family history.">❓</span>
+            </label>
+            <input type="number" name="dpf" step="0.01" required>
+
+            <label>Age: 
+                <span class="tooltip" title="Older people have a higher risk of diabetes.">❓</span>
+            </label>
+            <input type="number" name="age" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: 200% 200%;
+    animation: gradientBG 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Background Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Page Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Landing Page Container */
+.container {
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Heading and Paragraph Animations */
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+h1:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+p:hover {
+    transform: scale(1.1);
+    color: #ffdd57;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    color: white;
+    border: 2px solid white;
+}
+.male {
+    background: #1e90ff;
+}
+.female {
+    background: #ff69b4;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+    50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+}
+.btn:hover {
+    animation: pulse 1.5s infinite;
+}
+
+/* Form Container (Vertical Layout) */
+.form-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+    width: 50%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+}
+
+/* Ensure the form layout is vertical */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between inputs */
+    width: 100%;
+}
+
+/* Input Fields */
+input {
+    width: 90%; /* Make inputs take up most of the form width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+    text-align: center;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Submit Button */
+button {
+    padding: 10px;
+    background: #32cd32;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 95%;
+}
+
+button:hover {
+    background: #228b22;
+    transform: scale(1.05);
+}
+
+/* Tooltip for Feature Descriptions */
+.tooltip {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 5px;
+    color: yellow;
+    transition: 0.3s;
+}
+.tooltip:hover {
+    color: orange;
+}
