@@ -1,7 +1,7 @@
 /* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: radial-gradient(circle, #e0f7fa, #006064);
     background-size: 200% 200%;
     animation: gradientBG 8s ease infinite;
     display: flex;
@@ -47,7 +47,7 @@ h1 {
 }
 h1:hover {
     transform: scale(1.2);
-    color: #ffd700;
+    color: #f7df0e;
 }
 
 p {
