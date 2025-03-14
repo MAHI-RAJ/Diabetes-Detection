@@ -108,6 +108,8 @@ p:hover {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center items */
+    height: fit-content;
+    margin-top:auto;
 }
 
 /* Ensure the form layout is vertical */
@@ -126,7 +128,7 @@ input {
     border-radius: 5px;
     font-size: 1em;
     transition: 0.3s;
-    text-align: center;
+    text-align: left;
 }
 input:focus {
     outline: none;
