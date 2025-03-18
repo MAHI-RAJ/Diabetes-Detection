@@ -2,7 +2,7 @@ Diabetes-Detection
 
 Overview
 
-Diabetes-Detection is a web-based application designed to predict the likelihood of diabetes based on user inputs such as age, BMI, body fat percentage, glucose level, blood pressure,skin thickness,Diabetes Pedigree Function and other health-related factors. The project is built using HTML, CSS, and JavaScript, providing an interactive and user-friendly interface for users to enter their details and receive instant results.
+Diabetes-Detection is a web-based application designed to predict the likelihood of diabetes based on user inputs such as age, BMI, body fat percentage, glucose level, blood pressure,skin thickness,Diabetes Pedigree Function and other health-related factors. The project is built using HTML, CSS, and JavaScript, Python, Machine Learning providing an interactive and user-friendly interface for users to enter their details and receive instant results.
 
 Features
 
@@ -20,10 +20,14 @@ Responsive Design: Optimized for different screen sizes.
 
 Data Validation: Ensures proper input formats to enhance accuracy.
 
-Technologies Used
+Technologies Used:
 
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML, CSS, JavaScript.
 
-Backend (if applicable): Can be integrated with Python/Flask or Node.js for advanced ML-based predictions.
+Backend: Python,
 
-Machine Learning (Future Scope): Possible integration with ML models using Python and TensorFlow/Scikit-Learn.
+Used Framework: Flask.
+
+Machine Learning: integrated Flask with ML model using Python. 
+
+Libraries: Pickle, Numpy, Scikit-Learn, Pandas.
