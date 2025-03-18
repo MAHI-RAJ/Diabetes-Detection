@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Health Check</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Women's Disease Prediction</h2>
+        <form action="{{ url_for('predict') }}" method="post">
+            <input type="hidden" name="form_type" value="women">  <!-- Hidden field for form type -->
+        
+            <label for="pregnancies">Pregnancies:</label>
+            <input type="text" name="pregnancies" required>
+        
+            <label for="glucose">Glucose:</label>
+            <input type="text" name="glucose" required>
+        
+            <label for="bp">Blood Pressure:</label>
+            <input type="text" name="bp" required>
+        
+            <label for="skin_thickness">Skin Thickness:</label>
+            <input type="text" name="skin_thickness" required>
+        
+            <label for="insulin">Insulin:</label>
+            <input type="text" name="insulin" required>
+        
+            <label for="bmi">BMI:</label>
+            <input type="text" name="bmi" required>
+        
+            <label for="dpf">Diabetes Pedigree Function:</label>
+            <input type="text" name="dpf" required>
+        
+            <label for="age">Age:</label>
+            <input type="text" name="age" required>
+        
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        
+        
+    </div>
+
+</body>
+</html>
