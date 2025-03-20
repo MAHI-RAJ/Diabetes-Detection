@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 df = pd.read_csv("women_diabetes.csv")
 
 # Define features (X) and target variable (y)
-X = df.drop(columns=["Outcome","Insulin"])
+X = df.drop(columns=["Outcome"])
 y = df["Outcome"]
 
 # Split data
