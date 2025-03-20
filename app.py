@@ -32,6 +32,7 @@ def predict():
             glucose = float(request.form["glucose"])
             bp = float(request.form["bp"])
             skin_thickness = float(request.form["skin_thickness"])
+            insulin = float(request.form["insulin"])
             bmi = float(request.form["bmi"])
             dpf = float(request.form["dpf"])
             age = int(request.form["age"])
